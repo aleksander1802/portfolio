@@ -19,7 +19,15 @@
         width: 300px;
         align-items: center;
         justify-content: space-between;
-        
+            a:last-child {
+                &:hover:last-child{                    
+                    transition: 0.5s;
+                    transform: scale(1.5); 
+                    color: black;
+                    text-shadow: 0px 0px 5px white;
+                }
+            }
+            
     }
     &__link {
         color: #fff;
@@ -27,8 +35,10 @@
         font-weight: bold;
         &:hover {             
             color: #fff;
-            text-shadow: 2px 2px 2px rgb(0, 0, 0);
-            text-decoration: none;          
+            text-shadow: 0px 0px 5px rgb(255, 255, 255);
+            text-decoration: none;  
+            color:black;   
+            transform: scale(1.2);     
         }
     }
 }
