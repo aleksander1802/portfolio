@@ -2,6 +2,7 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 60px;
+    
     &_fz14 {
         font-size: 14px;
         line-height: 21px;
@@ -15,15 +16,28 @@
     }
     &_fz20 {
         font-size: 20px;
-        line-height: 30px;        
+        line-height: 30px;
+        color: $main-color;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);        
     }
     &_fz36 {
         font-size: 36px;
+        color: $main-color;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
     }
     &_fz48 {
         font-size: 48px;
         color: $main-color;
         text-shadow: 5px 5px 2px #000;
     }
-    
+    &__section-title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
