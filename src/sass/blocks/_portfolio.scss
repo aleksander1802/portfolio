@@ -1,6 +1,5 @@
 .portfolio {
-    padding-top: 120px;  
-    
+    padding-top: 120px;    
     background: linear-gradient(1turn, rgba(213, 213, 213, 0), #3b5a84, rgba(179, 179, 179, 0.003));
     &__subtitle {
         padding-top: 6px;
@@ -31,6 +30,55 @@
         }
         &:hover {            
             filter: grayscale(0);
+        }
+    }
+    &__list {
+        padding-top: 60px;
+        &_title {                                
+            text-align: center;            
+        }
+        &_items {
+            margin-top: 60px;
+            padding-left: 50px;
+            display: grid;
+            grid-template: repeat(3, minmax(45px, auto)) / repeat(2, 365px); 
+            grid-auto-rows: minmax(45px, auto);           
+            row-gap: 15px;
+            column-gap: 306px;
+        }
+        &-item {
+            display: grid;
+            grid-template: minmax(21px, auto) / repeat(2, auto);
+            
+            justify-content: space-between;
+            align-content: space-between;            
+        }
+        &-title {
+            position: relative;
+            color: #000;
+            font-weight: 700;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: #325f74;
+                border-radius: 100%;
+                left: -30px;
+                top: 3px;
+            }
+        }
+        &-price {
+            color: #000;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 21px;    
+            justify-self: end;
+        }
+        &-descr {            
+            font-size: 12px;
+            font-weight: 500;
+            grid-column: 1 / 3;
         }
     }
 }
