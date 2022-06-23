@@ -1,0 +1,19 @@
+.policy {
+    padding: 20px;
+    width: 100%;
+    .descr {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+    ol {
+        padding-left: 40px;
+        margin-bottom: 16px;
+        list-style-type: none;
+        li {
+            font-size: 16px; 
+            line-height: 1.5;           
+        }
+    }
+}
