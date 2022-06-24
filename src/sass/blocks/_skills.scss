@@ -39,6 +39,7 @@
             margin-bottom: 0;
             font-size: 12px;
             line-height: 18px;
+            text-shadow: 1px 1px 1px rgb(0, 0, 0);
         }
     }
     &__ratings {
@@ -52,6 +53,7 @@
             grid-template: minmax(21px, auto) 14px / 200px 35px;
             justify-content: space-between;
             align-content: space-between;
+            
         }
         &-title {
             position: relative;
