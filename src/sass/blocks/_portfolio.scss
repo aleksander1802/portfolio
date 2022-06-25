@@ -46,14 +46,13 @@
             grid-template: repeat(3, minmax(45px, auto)) / repeat(2, 365px); 
             grid-auto-rows: minmax(45px, auto);           
             row-gap: 15px;
-            column-gap: 306px;
+            justify-content: space-between;
         }
         &-item {
             display: grid;
             grid-template: minmax(21px, auto) / repeat(2, auto);
-            
-            justify-content: space-between;
-            align-content: space-between;            
+            row-gap: 5px;
+                       
         }
         &-title {
             position: relative;
